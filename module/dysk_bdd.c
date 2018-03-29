@@ -1052,7 +1052,8 @@ static void __exit _module_teardown(void)
 {
   //az_teardown_for_dysk(d);
   printk(KERN_INFO "dysk unloading");
-  unload();
+  // TODO: hacky, don't unload anything on module teardown
+  // unload();
 }
 
 // ---------------------------------------
